@@ -27,3 +27,28 @@ updates:
           - patch
     schedule:
       interval: "daily"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docker
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tests/images/mysql-server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tests/images/postgres-server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tests/images/ssh-server
+    schedule:
+      interval: daily
